@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoimmune Diseases - Health Information Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <span>Global</span>
+                <div class="top-bar-right">
+                    <button class="search-btn">🔍</button>
+                    <button class="language-btn">Select language ▾</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🏥</div>
+                    <div class="logo-text">
+                        <span class="logo-main">Health Information</span>
+                        <span class="logo-sub">Portal</span>
+                    </div>
+                </div>
+                <button class="donate-btn">💛 Donate</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#" class="active">🏠</a></li>
+                <li><a href="#">Health Topics ▾</a></li>
+                <li><a href="#">Diseases ▾</a></li>
+                <li><a href="#">Resources ▾</a></li>
+                <li><a href="#">Research ▾</a></li>
+                <li><a href="#">About ▾</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Understanding Autoimmune Diseases</h1>
+            <button class="hero-btn" onclick="scrollToContent()">Find out more</button>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <div class="container">
+            <div class="quick-links-grid">
+                <button onclick="showSection('intro')" class="quick-link-card active" id="card-intro">
+                    <span class="card-icon">📚</span>
+                    <h3>Introduction</h3>
+                    <p>Learn how autoimmunity works</p>
+                </button>
+                <button onclick="showSection('digestive')" class="quick-link-card" id="card-digestive">
+                    <span class="card-icon">🔬</span>
+                    <h3>Digestive System</h3>
+                    <p>Celiac Disease & IBD</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div id="intro" class="content-section active">
+                <h2 class="section-title">The "Why": How Autoimmunity Works</h2>
+                
+                <div class="intro-box">
+                    <h3>What is Autoimmunity?</h3>
+                    <p>Autoimmunity occurs when the immune system, which normally protects us from harmful invaders like bacteria and viruses, mistakenly attacks the body's own healthy cells and tissues.</p>
+                </div>
+
+                <h3>Understanding Self vs. Non-Self</h3>
+                <p>Under normal circumstances, your immune system has a remarkable ability to distinguish between:</p>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="card-header">
+                            <span class="card-icon-large">🛡️</span>
+                            <h4>"Self"</h4>
+                        </div>
+                        <p>Your own cells, tissues, and organs that belong to your body and should be protected</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-header">
+                            <span class="card-icon-large">⚔️</span>
+                            <h4>"Non-Self"</h4>
+                        </div>
+                        <p>Foreign invaders like viruses, bacteria, fungi, and parasites that need to be eliminated</p>
+                    </div>
+                </div>
+
+                <h3>What Goes Wrong in Autoimmunity?</h3>
+                <p>In autoimmune diseases, this critical distinction breaks down. The immune system loses its ability to recognize certain parts of the body as "self" and begins producing <span class="highlight">autoantibodies</span> — antibodies that target the body's own tissues.</p>
+
+                <div class="disease-card">
+                    <h3>The Cascade Effect</h3>
+                    <p>When autoantibodies attack healthy tissue, they trigger:</p>
+                    <ul>
+                        <li><strong>Inflammation:</strong> The body's natural response to injury, causing redness, swelling, and pain</li>
+                        <li><strong>Tissue Damage:</strong> Repeated attacks can destroy healthy cells and organs over time</li>
+                        <li><strong>Loss of Function:</strong> As tissues are damaged, they can no longer perform their normal roles</li>
+                        <li><strong>Chronic Symptoms:</strong> Ongoing immune activity leads to persistent health issues</li>
+                    </ul>
+                </div>
+
+                <h3>Why Does This Happen?</h3>
+                <p>The exact causes of autoimmune diseases are still being researched, but scientists believe they result from a combination of:</p>
+                <ul>
+                    <li><strong>Genetic Factors:</strong> Certain genes can make someone more susceptible</li>
+                    <li><strong>Environmental Triggers:</strong> Infections, toxins, or stress may activate the immune response</li>
+                    <li><strong>Hormonal Influences:</strong> Many autoimmune diseases are more common in women</li>
+                    <li><strong>Molecular Mimicry:</strong> Sometimes foreign substances look similar to the body's own cells, confusing the immune system</li>
+                </ul>
+
+                <div class="callout-box">
+                    <strong>Important Note:</strong> Autoimmune diseases can affect virtually any part of the body, from the digestive system and joints to the skin, nervous system, and endocrine glands. Each disease has unique characteristics, but they all share this fundamental mechanism of immune system confusion.
+                </div>
+            </div>
+
+            <div id="digestive" class="content-section">
+                <h2 class="section-title">Diseases of the Digestive System</h2>
+                
+                <p class="lead-text">The digestive system is particularly vulnerable to autoimmune disorders because it's constantly exposed to foreign substances through food and contains a large portion of the body's immune cells.</p>
+
+                <div class="disease-card featured">
+                    <div class="disease-header">
+                        <span class="disease-icon">🌾</span>
+                        <h3>Celiac Disease</h3>
+                    </div>
+                    <p class="disease-intro"><strong>What happens:</strong> When people with celiac disease consume gluten (a protein found in wheat, barley, and rye), their immune system attacks the small intestine.</p>
+                    
+                    <h4>The Mechanism:</h4>
+                    <p>Gluten triggers an immune response that specifically targets and destroys the <span class="highlight">villi</span> — tiny, finger-like projections lining the small intestine. These villi are crucial for nutrient absorption, and their destruction leads to malnutrition and various complications.</p>
+                    
+                    <h4>Common Symptoms:</h4>
+                    <div class="symptoms-grid">
+                        <div class="symptom-item">• Chronic diarrhea or constipation</div>
+                        <div class="symptom-item">• Abdominal bloating and pain</div>
+                        <div class="symptom-item">• Fatigue and weakness</div>
+                        <div class="symptom-item">• Weight loss</div>
+                        <div class="symptom-item">• Anemia (iron deficiency)</div>
+                        <div class="symptom-item">• Bone density loss</div>
+                    </div>
+                    
+                    <h4>Treatment:</h4>
+                    <p>The primary treatment is a strict, lifelong <strong>gluten-free diet</strong>. When gluten is eliminated, the intestinal lining can heal, and symptoms typically improve within weeks to months.</p>
+                </div>
+
+                <div class="disease-card featured">
+                    <div class="disease-header">
+                        <span class="disease-icon">🔥</span>
+                        <h3>Inflammatory Bowel Disease (IBD)</h3>
+                    </div>
+                    <p class="disease-intro"><strong>What happens:</strong> The immune system causes chronic, destructive inflammation throughout the digestive tract. IBD is actually an umbrella term for two main conditions:</p>
+                    
+                    <div class="ibd-comparison">
+                        <div class="ibd-type">
+                            <h4>Crohn's Disease</h4>
+                            <p><strong>Location:</strong> Can affect any part of the digestive tract from mouth to anus, but most commonly the end of the small intestine (ileum) and beginning of the colon.</p>
+                            <p><strong>Pattern:</strong> Inflammation occurs in patches, with healthy tissue between affected areas. It extends through all layers of the intestinal wall.</p>
+                            
+                            <div class="detail-grid">
+                                <div>
+                                    <h5>Symptoms</h5>
+                                    <ul>
+                                        <li>Persistent diarrhea</li>
+                                        <li>Abdominal pain and cramping</li>
+                                        <li>Blood in stool</li>
+                                        <li>Weight loss</li>
+                                        <li>Fever and fatigue</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5>Complications</h5>
+                                    <ul>
+                                        <li>Intestinal blockages</li>
+                                        <li>Fistulas</li>
+                                        <li>Abscesses</li>
+                                        <li>Malnutrition</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ibd-type">
+                            <h4>Ulcerative Colitis</h4>
+                            <p><strong>Location:</strong> Only affects the colon (large intestine) and rectum.</p>
+                            <p><strong>Pattern:</strong> Inflammation is continuous (not patchy) and limited to the innermost lining of the colon.</p>
+                            
+                            <div class="detail-grid">
+                                <div>
+                                    <h5>Symptoms</h5>
+                                    <ul>
+                                        <li>Bloody diarrhea</li>
+                                        <li>Urgent need to defecate</li>
+                                        <li>Abdominal pain</li>
+                                        <li>Rectal bleeding</li>
+                                        <li>Weight loss</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5>Complications</h5>
+                                    <ul>
+                                        <li>Severe bleeding</li>
+                                        <li>Colon perforation</li>
+                                        <li>Increased cancer risk</li>
+                                        <li>Toxic megacolon</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Treatment for IBD:</h4>
+                    <div class="treatment-list">
+                        <div class="treatment-item">
+                            <strong>Anti-inflammatory drugs:</strong> Reduce intestinal inflammation
+                        </div>
+                        <div class="treatment-item">
+                            <strong>Immune system suppressors:</strong> Prevent immune attacks
+                        </div>
+                        <div class="treatment-item">
+                            <strong>Biologics:</strong> Target specific proteins involved in inflammation
+                        </div>
+                        <div class="treatment-item">
+                            <strong>Surgery:</strong> May be needed in severe cases
+                        </div>
+                    </div>
+                </div>
+
+                <div class="callout-box">
+                    <strong>Key Difference:</strong> While celiac disease has a clear trigger (gluten) that can be avoided, IBD has no known specific dietary trigger and requires ongoing medical management. Both conditions require close collaboration with gastroenterologists.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+ <footer class="who-footer">
+    <div class="container footer-grid">
+
+        <!-- Regions -->
+        <div class="footer-column">
+            <h4>Regions</h4>
+            <ul>
+                <li><a href="#">Africa</a></li>
+                <li><a href="#">Americas</a></li>
+                <li><a href="#">Eastern Mediterranean</a></li>
+                <li><a href="#">Europe</a></li>
+                <li><a href="#">South-East Asia</a></li>
+                <li><a href="#">Western Pacific</a></li>
+            </ul>
+        </div>
+
+        <!-- Policies -->
+        <div class="footer-column">
+            <h4>Policies</h4>
+            <ul>
+                <li><a href="#">Cybersecurity</a></li>
+                <li><a href="#">Ethics</a></li>
+                <li><a href="#">Information disclosure</a></li>
+                <li><a href="#">Permissions and licensing</a></li>
+                <li><a href="#">Preventing sexual exploitation</a></li>
+                <li><a href="#">Terms of use</a></li>
+            </ul>
+        </div>
+
+        <!-- About us -->
+        <div class="footer-column">
+            <h4>About us</h4>
+            <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Frequently asked questions</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Procurement</a></li>
+                <li><a href="#">Publications</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column">
+            <h4>Contact us</h4>
+            <button class="footer-btn">Newsletters</button>
+            <button class="footer-btn">Report misconduct</button>
+        </div>
+
+    </div>
+
+    <!-- Center Logo -->
+    <div class="footer-logo">
+        <span class="logo-icon">🏥</span>
+        <span class="logo-text">Health Information Portal</span>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+        <span>Privacy policy</span>
+
+        <div class="social-icons">
+            <span>▶</span>
+            <span>f</span>
+            <span>📸</span>
+            <span>in</span>
+            <span>👻</span>
+            <span>🎵</span>
+        </div>
+
+        <span>© 2026 Health Information Portal</span>
+    </div>
+</footer>
