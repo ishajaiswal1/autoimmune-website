@@ -464,8 +464,71 @@ li {
     margin: 8px 0;
 }
 
+/* NEW: Selected References Dark Theme Section */
+.references-section {
+    background-color: #096fd4; /* Dark navy background */
+    color: #94a3b8;
+    padding: 40px;
+    border-radius: 8px;
+    margin-top: 50px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace; /* Monospace for technical look */
+}
+
+.references-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.ref-title {
+    color: #ffffff;
+    font-size: 22px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.reference-item {
+    margin-bottom: 25px;
+    padding-left: 20px;
+    border-left: 2px solid #1e293b;
+    transition: all 0.3s ease;
+}
+
+/* Teal Highlight for CRISPR study */
+.reference-item.highlighted {
+    border-left: 2px solid #2dd4bf; 
+}
+
+.ref-author {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 15px;
+}
+
+.ref-content {
+    margin-bottom: 6px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.ref-link, .ref-journal {
+    color: #64748b;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.ref-link:hover {
+    color: #2dd4bf;
+    text-decoration: underline;
+}
+
 /* Footer */
-/* WHO Style Footer */
 .who-footer {
     background: #0b2e67;
     color: #ffffff;
@@ -527,7 +590,6 @@ li {
     background: #2459a5;
 }
 
-/* Center Logo */
 .footer-logo {
     text-align: center;
     padding: 30px 0;
@@ -536,7 +598,6 @@ li {
     letter-spacing: 0.5px;
 }
 
-/* Bottom Bar */
 .footer-bottom {
     background: #1f3f73;
     display: flex;
@@ -556,27 +617,13 @@ li {
     font-size: 15px;
 }
 
-/* Responsive Footer */
+/* Responsive Design */
 @media (max-width: 900px) {
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 500px) {
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-}
-
-
-/* Responsive Design */
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 32px;
@@ -620,5 +667,67 @@ li {
         text-align: center;
     }
 
+    .references-section {
+        padding: 25px 15px;
+    }
+}
 
+@media (max-width: 500px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    /* Footer References Specific Styling */
+.footer-ref-list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.footer-ref-list li {
+    margin-bottom: 15px !important;
+}
+
+.footer-ref-item {
+    display: block;
+    text-decoration: none !important;
+    transition: transform 0.2s ease;
+}
+
+.footer-ref-item:hover {
+    transform: translateX(5px);
+}
+
+.ref-title-sm {
+    display: block;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 2px;
+}
+
+.ref-author-sm {
+    font-size: 11px;
+    color: #fbbf24; /* Amber color for authors */
+    margin: 0 !important;
+    opacity: 0.9;
+}
+
+.footer-ref-item:hover .ref-title-sm {
+    color: #2dd4bf; /* Teal highlight on hover */
+    text-decoration: underline;
+}
+
+/* Highlighted Reference in Footer */
+.highlighted-ref {
+    border-left: 2px solid #2dd4bf;
+    padding-left: 10px;
+}
 }
